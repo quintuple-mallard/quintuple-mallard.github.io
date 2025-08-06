@@ -3,53 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>quintuple-mallard Homepage</title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>quintuple-mallard Home</title>
 </head>
 <body>
-    <section class="topbar">
-        <div class="menu">
-            Menu
-            <div>
-                Snake
-            </div>
-            <div>
-                Breakout
-            </div>
-            <div>
-                Source code
-            </div>
-            <div>
-                Programming languages
-            </div>
-        </div>
-    </section>
-    <h1>
-        Hi!
-    </h1>
-    <div>
-        There isn't really much here yet, but there are some (quite simple) games.
+  <h1>Welcome!</h1>
+  <div class="paragraph">
+    Here you can try playing one of the games I have made, or read a post I have written.
+  </div>
+  <section id="menu">
+    <div id="games">
+      <a href="./games/breakout">
+        <button>Breakout</button>
+      </a>
+      <a href="./games/snake">
+        <button>Snake</button>
+      </a>
     </div>
+    <a href="./posts">
+    <div id="posts">
+        <a href="./posts/post">
+          [Post name]
+        </a>
+      </div>
+    </div>
+    </a>
+  </section>
 </body>
-<style>
-    @media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: oklch(29.313% 0.00003 271.152);
-    --text-color: oklch(96.416% 0.00011 271.152);
-  }
-}
-@media (prefers-color-scheme: light) {
-  :root {
-    --text-color: black;
-    --bg-color: white;
-  }
-}
-body {
-  background-color:var(--bg-color);
-  color: var(--text-color);
-  .menu {
-    display: flex;
-    flex-direction: column;
-  }
-}
-</style>
+<script src="script.js"></script>
 </html>

@@ -1,0 +1,34 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: oklch(0.227 0.0543 299 / 88.05%);
+        --text-color:oklch(95.062% 0.01398 354.568 / 0.881);
+    }
+}
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-color: oklch(96.81% 0.00817 278.543 / 0.881);
+        --text-color:oklch(0.227 0.0543 299 / 88.05%);
+    }
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+:root {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+#menu {
+    display: grid;
+    grid-template-columns: 1;
+    gap: 10%;
+    * {
+        border: 1px solid cornflowerblue;
+        border-radius: 5px;
+    }
+}
+@media (min-width: 600px) {
+  body {
+    padding: 5%;
+  }
+}
