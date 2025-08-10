@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="post-styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>An intro to Uiua</h1>
+
+    <div>
+      Uiua is a <em>stack-based, array-oriented</em> programming language that
+      uses glyphs to represent its built-in functions and operators. For
+      example, a simple Uiua program might look like this:
+      <pre><code>
+            Sum ← /+
+            Avg ← ÷⧻⟜Sum
+            Avg [1 2 3 4 5 6 7]
+        </code></pre>
+        Let's break this down.
+        The first line defines a function called <code>Sum</code>, that will run the <code>/+</code> glyphs when called.
+        The <code>/</code> glyph is a modifier called <code>reduce</code>, that takes a function as an argument, here the <code>+</code> function,
+        and uses it to reduce an array. So the <code>Sum</code> function sums an array.
+
+        The next line defines the <code>Avg</code> function, to take the average of an array.
+        It starts by calling the <code>Sum</code> function on the values passed to it (uiua code runs right-to-left), with the <code>⟜</code> modifier applied to it.
+        
+    </div>
+  </body>
+</html>
